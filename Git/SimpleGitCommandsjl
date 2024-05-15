@@ -1,0 +1,13 @@
+using Git
+
+run(git(["clone","https://github.com/QuantumJunction/HowToJulia.git"]))
+
+run(git(["init","--initial-branch=master"]))
+
+run(git(["branch","-m","master default"]))
+
+run(git(["remote","add","origin","https://github.com/QuantumJunction/HowToJulia.git"]))
+
+run(git(["stage","--all"]))
+
+reun(git(["push","origin","master"]))
